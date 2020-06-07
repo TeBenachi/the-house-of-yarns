@@ -1,6 +1,8 @@
 
 HTML template. 
 
+Live demo: https://tebenachi.github.io/the-house-of-yarns/
+
 
 Bulma CSS Framework (License: MIT)
 https://bulma.io/
