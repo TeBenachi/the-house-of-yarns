@@ -17,7 +17,7 @@
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item">
-            <h1></h1>
+            <h1 class="logo">The House of Yarns</h1>
           </a>
           <span class="navbar-burger burger" data-target="navbarMenuHeroC">
             <span></span>
@@ -27,14 +27,17 @@
         </div>
         <div id="navbarMenuHeroC" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item is-active">
+            <a class="navbar-item" href="#gallery">
               Things I made
             </a>
             <a class="navbar-item">
-              Things I learned
+              About Me
             </a>
             <a class="navbar-item">
-              About Me
+              Blog
+            </a>
+            <a class="navbar-item" href="#contact">
+              Contact 
             </a>
           </div>
         </div>
@@ -45,10 +48,10 @@
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h1 class="title is-size-1">
+      <h1 class="title">
         Knit Along
       </h1>
-      <h2 class="subtitle is-size-4">
+      <h2 class="subtitle">
         What are you knitting today?
       </h2>
     </div>
@@ -57,8 +60,8 @@
   <!-- Hero footer: will stick at the bottom -->
   <div class="hero-foot">
     <nav class=" is-fullwidth">
-      <div class="container has-text-centered is-size-1">
-            <a>&#42780</a>
+      <div class="container has-text-centered bounce">
+            <a href="#main-content">&#42780</a>
       </div>
     </nav>
   </div>
@@ -67,7 +70,7 @@
 <!-- Featured and Lastest Posts      -->
 
 <section class="section home-stories">
-    <div class="container">
+    <div class="container" id="main-content">
         <div class="columns">
             <div class="column">
                 
@@ -79,7 +82,7 @@
                         <p class="title is-5">Rainbow Knitting</p>
                         <p class="subtitle is-6">
                             Let's see what we can do with variegated yarns.
-                            <a href="#" aria-label="More on Bottoms Up Link Text"> Read more</a>
+                            <a href="#" aria-label="More on Bottoms Up Link Text"> Read more &#8594;</a>
                         </p>
                     </div>
                     <!-- <div class="">
@@ -101,7 +104,7 @@
                         <p class="title is-5">Shawls saved the day</p>
                         <p class="subtitle is-6">
                             Oversized shawl features floral stitches.
-                            <a href="#" aria-label="More on Bottoms Up Link Text"> Read more</a>
+                            <a href="#" aria-label="More on Bottoms Up Link Text"> Read more &#8594;</a>
                         </p>
                     </div>
                    
@@ -110,27 +113,19 @@
                         <p class="title is-5">Bottoms Up!</p>
                         <p class="subtitle is-6">
                             10 reasons why you should be a knitter. 
-                            <a href="#" aria-label="More on Bottoms Up Link Text"> Read more</a>
+                            <a href="#" aria-label="More on Bottoms Up Link Text"> Read more &#8594;</a>
                         </p>
                     </div>
-                
-                </div>
                     
-                <!-- <div class="columns">
-                    <div class="column is-half">
-                        <p class="bd-notification">5</p>
-                    </div>
-                    <div class="column is-half">
-                        <p class="bd-notification">6</p>
-                    </div>
-                </div> -->
+                </div>
+
             </div>
         </div>
     </div>
 </section>
 
 
-<section class="section section-top">
+<section class="section section-top" id="gallery">
     <div class="container">
         
         <p class="title">Gallary</p>
@@ -185,52 +180,43 @@
 </section>
 
 
-<section class="section section-bottom">
-    
-    <div class="container">
+<section class="section section-bottom is-medium" id="contact">
+    <div class="container has-text-centered ">
         <div class="columns">
-            <div class="column">
-                <figure class="image is-128x128">
-                    <img class="is-rounded" src="img/woman-looking-up-while-wearing-headphones-374808.jpg">
-                </figure>
-            </div>
-            <div class="column">
-                <p class="title">About Me</p>
-                <p></p>
-            </div>
-            
-        </div>
-       <form action="#" method="post" accept-charset="utf-8" id="">
-
-        <div class="columns is-vcentered is-three-fifths is-offset-one-fifth">
-            <div class="column has-text-right">
-               <p class="is-size-5">Keep in Touch</p>  
-            </div>
-            <div class="column">
-                <div class="field">
-                    <p class="control has-icons-left has-icons-right">
+            <div class="column is-half is-offset-one-quarter">
+                
+                <p class="title newsletter is-size-1">Newsletter</p>
+                <p class="m-b-l">To be the first to hear about the latest news!</p>
+                
+                <form action="#" method="post" accept-charset="utf-8" id="">
                     <input class="input" type="email" placeholder="Email">
-                     </p>
-                </div>
+                    <button type="submit" name="" class="">
+                        Submit
+                    </button>
+                </form> 
+                
             </div>
-            <div class="column">
-                <button type="submit" name="" class="button is-warning is-light">
-                    Sign Up
-                </button>
-            </div>
-        </div>
-                         
-        </form> 
+        </div>          
     </div>
 </section>
 
+
 <footer class="footer">
-  <div class="content has-text-centered">
+  <div class="container has-text-centered">
+        <div class="social-media-icons">
+            <ul>
+                <li><a href="mailto:#">Email</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
     <p>
-      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+      <strong>The House of Yarns</strong> HTML template is created by <a href="#">Benachi</a>. The source code is licensed
       <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
       is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
     </p>
+    
   </div>
 </footer>
 

@@ -1,23 +1,37 @@
 
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Noto+Sans+JP&display=swap');
 
 
 :root {
-    --body-font: 'M PLUS Rounded 1c', sans-serif;
-    --hero-font: 'Amatic SC', cursive;
+    --body-font: 'Noto Sans JP', sans-serif;
     --link-color: #000000;
+    --hover-color:#01d1b2;
+    --logo-text-color: #FFFFFF;
+    --navi-link-color: #FFFFFF;
+    --navi-link-color-hover: #000000;
+    --accent-font: 'Amatic SC', cursive;
+    --hero-text-color: #FFFFFF;
+    --hero-title-size: 6rem;
+    --hero-subtitle-size: 2rem;
+    --hero-footer-link: #FFFFFF;
+    --hero-footer-link-size: 3rem;
     --section-bottom-bg-color: #f5f5f0;
-    --footer-bg-color: #c3d5cc;
+    --sage-bg-color: #c3d5cc;
+}
+
+html {
+    font-family: var(--body-font);
+    color: var(--body-font-color);
+    scroll-behavior: smooth; 
 }
 
 a {
     color: var(--link-color);
 }
 
-.has-background-img {
-    background: url("../img/four-green-yarns-on-chopping-board-2062061.jpg") center center; 
-    background-size:cover; 
+a:hover {
+    color: var(--hover-color);
 }
 
 .m-b-xs {
@@ -28,15 +42,121 @@ a {
     margin-bottom: 0.5rem;
 }
 
-.container-middle {
-    background-color: var(--section-bottom-bg-color);
+.m-b-m {
+    margin-bottom: 0.75rem;
+}
+
+.m-b-l {
+    margin-bottom: 1rem;
+}
+
+/* Header - Logo, Navi, Hero  */
+
+.logo {
+    font-family: var(--accent-font);
+    color: var(--logo-text-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+a.navbar-item  {
+    color: var(--navi-link-color);
+}
+
+a.navbar-item:hover{
+    background-color: transparent;
+    color: var(--navi-link-color-hover);
+}
+
+.hero-body .title,
+.hero-body .subtitle  {
+    font-family: var(--accent-font);
+    color: var(--hero-text-color);
+    font-size: var(--hero-title-size);
+}
+
+.hero-body .subtitle {
+    font-size: var(--hero-subtitle-size);
+}
+
+.has-background-img {
+    background-image: 
+        linear-gradient(rgba(23, 67, 88, 0.4), rgba(23, 67, 88, 0.4)), 
+        url("../img/four-green-yarns-on-chopping-board-2062061.jpg");
+    background-size: cover; 
+    background-position: center;
+}
+
+.hero-foot a {
+    color: var(--hero-footer-link);
+    font-size: var(--hero-footer-link-size);
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+/* Main Content */
+
+p.newsletter {
+    font-family: var(--accent-font);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+   grid-gap: 10px;
+}
+
+button {
+    background-color: var(--sage-bg-color);
+    font-family: var(--accent-font);
+    font-size: 1.3rem;
+    border:1px solid #ccc;
+    cursor: pointer;
+    margin: 1px;
 }
 
 .section-bottom {
     background-color: var(--section-bottom-bg-color);
 }
 
+.social-media-icons {
+    margin-bottom: 1rem;
+}
+
+.social-media-icons ul li {
+   display: inline; 
+   font-family: var(--accent-font);
+   font-weight: bold;
+   font-size: 1.5rem;
+   padding: 0 0.5rem;
+}
+
+.social-media-icons ul li a:hover {
+   color: white;
+}
 
 .footer {
-    background-color: var(--footer-bg-color);
+    background-color: var(--sage-bg-color);
+}
+
+/* Animation */
+
+@keyframes bounce {
+    
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    
+    40% {
+        transform: translateY(-30px);
+    }
+    
+    60% {
+        transform: translateY(-15px);
+    }
+  
 }
