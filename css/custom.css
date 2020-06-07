@@ -1,0 +1,42 @@
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=M+PLUS+Rounded+1c&display=swap');
+
+
+:root {
+    --body-font: 'M PLUS Rounded 1c', sans-serif;
+    --hero-font: 'Amatic SC', cursive;
+    --link-color: #000000;
+    --section-bottom-bg-color: #f5f5f0;
+    --footer-bg-color: #c3d5cc;
+}
+
+a {
+    color: var(--link-color);
+}
+
+.has-background-img {
+    background: url("../img/four-green-yarns-on-chopping-board-2062061.jpg") center center; 
+    background-size:cover; 
+}
+
+.m-b-xs {
+    margin-bottom: 0.25rem;
+}
+
+.m-b-s {
+    margin-bottom: 0.5rem;
+}
+
+.container-middle {
+    background-color: var(--section-bottom-bg-color);
+}
+
+.section-bottom {
+    background-color: var(--section-bottom-bg-color);
+}
+
+
+.footer {
+    background-color: var(--footer-bg-color);
+}
