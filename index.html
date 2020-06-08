@@ -10,65 +10,80 @@
 <body>
     
 <!--- Hero & Navi -->
-<section class="hero is-fullheight has-background-img ">
-  <!-- Hero head: will stick at the top -->
-  <div class="hero-head">
-    <header class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item">
-            <h1 class="logo">The House of Yarns</h1>
-          </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navbarMenuHeroC" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="#gallery">
-              Things I made
-            </a>
-            <a class="navbar-item">
-              About Me
-            </a>
-            <a class="navbar-item">
-              Blog
-            </a>
-            <a class="navbar-item" href="#contact">
-              Contact 
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-  </div>
-
-  <!-- Hero content: will be in the middle -->
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">
-        Knit Along
-      </h1>
-      <h2 class="subtitle">
-        What are you knitting today?
-      </h2>
+<section class=" hero is-fullheight has-background-img ">
+  
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+        <header>
+            <div class="container">
+            
+                <nav class="navbar is-transparent">
+                        
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="#">
+                            <h1 class="logo">The House of Yarns</h1>
+                        </a>
+                    
+                        <div class="navbar-burger burger" data-target="openBurger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>  
+                    </div>
+                        
+                    <div id="openBurger" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item is-active has-text-white-bis" href="#gallery">
+                                Things I made
+                            </a>
+                            <div class="navbar-item has-dropdown is-hoverable ">
+                                <a class="navbar-item  has-text-white-bis" href="#">
+                                    About me
+                                </a>
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item has-text-black-bis" href="#">
+                                        Blog
+                                    </a>
+                                </div>
+                            </div>
+                            <a class="navbar-item  has-text-white-bis" href="#contact">
+                                Contact
+                            </a>
+                            
+                        </div>
+                    </div>
+            
+                </nav>
+                
+            </div>
+        </header>
     </div>
-  </div>
 
-  <!-- Hero footer: will stick at the bottom -->
-  <div class="hero-foot">
-    <nav class=" is-fullwidth">
-      <div class="container has-text-centered bounce">
-            <a href="#main-content">&#42780</a>
-      </div>
-    </nav>
-  </div>
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+        <div class="container has-text-centered">
+        <h1 class="title">
+            Knit Along
+        </h1>
+        <h2 class="subtitle">
+            What are you knitting today?
+        </h2>
+        </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+        <nav class=" is-fullwidth">
+        <div class="container has-text-centered bounce">
+                <a href="#main-content">&#42780</a>
+        </div>
+        </nav>
+    </div>
+  
 </section>
 
-<!-- Featured and Lastest Posts      -->
 
+<!-- Featured and Lastest Posts  -->
 <section class="section home-stories">
     <div class="container" id="main-content">
         <div class="columns">
@@ -86,7 +101,7 @@
                         </p>
                     </div>
                     <!-- <div class="">
-                        <p class="bd-notification">Second nested column</p>
+                        <p class="bd-notification">Second nested column if needed.</p>
                     </div> -->
                 </div>
             </div>
@@ -128,7 +143,7 @@
 <section class="section section-top" id="gallery">
     <div class="container">
         
-        <p class="title">Gallary</p>
+        <p class="title">Gallery</p>
          
         <div class="tile is-ancestor">
             <div class="tile is-parent">
@@ -211,14 +226,14 @@
                 <li><a href="#">Instagram</a></li>
             </ul>
         </div>
-    <p>
-      <strong>The House of Yarns</strong> HTML template is created by <a href="https://github.com/TeBenachi">Benachi</a>.
-       The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-    </p>
-    
+        <p>
+        <strong>The House of Yarns</strong> HTML template is created by <a href="https://github.com/TeBenachi">Benachi</a>.<br>
+        The source code is licensed <a href="https://www.gnu.org/licenses/licenses.en.html">GNU General Public License (GPL)</a>.
+        </p>
   </div>
 </footer>
 
-    
+<script src="script.js"></script>
+
 </body>
 </html>
