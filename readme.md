@@ -1,18 +1,18 @@
 
-HTML template  - The House of Yarns
+# HTML template  - The House of Yarns
 
-Live demo: 
+##### Live demo: 
 
 https://tebenachi.github.io/the-house-of-yarns/
 
 
-Bulma CSS Framework (License: MIT)
+##### Bulma CSS Framework (License: MIT)
 
 https://bulma.io/
 
 
 
-Photos credits:
+##### Photos credits:
 
 The following photos are found on Pexels.com. 
 
