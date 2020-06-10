@@ -143,6 +143,41 @@ button {
     background-color: var(--sage-bg-color);
 }
 
+
+@media screen and (max-width: 1023px) {
+    
+    .navbar-burger {
+        z-index: 100;
+    }
+    
+    .navbar-menu {
+        animation: navbarOpen .2s ease-in-out;
+    }
+
+    .navbar-menu.is-active {
+        position: fixed;
+        z-index: 75;
+        display: flex;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--sage-bg-color);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    a.navbar-item {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .navbar-dropdown {
+        background-color: transparent;
+    }
+
+}
+
+
 /* Animation */
 
 @keyframes bounce {
@@ -161,36 +196,18 @@ button {
   
 }
 
-
-
-
-@media screen and (max-width: 1023px) {
-    
-    .navbar-burger {
-        z-index: 100;
+@keyframes navbarOpen {
+    0% {   
+        display: none;
+        opacity: 0;
     }
     
-    .navbar-menu.is-active {
+    1% {
         display: block;
-        position: absolute;
-        top: 0;
-        background-color: var(--dropdown-bg-color);
-        width: 100%;
-        height: 100vh;
-        transition: all .5s ease-in-out;
-        z-index: 75;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        opacity: 0;
     }
     
-    a.navbar-item {
-        font-size: 2rem;
-        text-align: center;
+    100% {
+        opacity: 1;
     }
-
-    .navbar-dropdown {
-        background-color: transparent;
-    }
-
 }
