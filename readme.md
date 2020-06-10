@@ -1,7 +1,12 @@
 
 # HTML template  - The House of Yarns
 
-This is a HTML template using Bulma CSS framework.  
+
+![The House of Yarns](https://raw.githubusercontent.com/TeBenachi/the-house-of-yarns/master/screenshot.png)
+
+
+
+HTML template using Bulma CSS framework.  
 
 
 **Live demo**\
